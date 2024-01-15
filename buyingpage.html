@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buying Page</title>
     <link rel="stylesheet" href="buyingpage.css" />
+    
   </head>
   <body>
     <nav>
       <div class="flexitem sitelogo"><img src="Logo WebDev.PNG" alt="" /></div>
       <div class="passionstatement"><span>Passion Statement</span></div>
-      <ul class="sidebar">
+      <ul class="sidebar" id="sidebar">
         <li class="navitem"><a href="#">HOME</a></li>
         <li class="navitem"><a href="#">NECKLACE</a></li>
         <li class="navitem"><a href="#">BRACELETS</a></li>
@@ -23,21 +24,11 @@
         <li class="hideonmobile"><a href="#">BRACELETS</a></li>
         <li class="hideonmobile"><a href="#">EARRINGS</a></li>
         <li class="hideonmobile"><a href="#">RINGS</a></li>
-        <li class="sidebarlogo"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        <li class="closesidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+        <li class="sidebarlogo"><button class="sidebarbutton" onclick="openSideBar()">☰</button></li>
+        <li class="closesidebar"><button class="sidebarbutton close" onclick="">✖</button></li>
       </ul>
 
-      <!-- 
-      <div class="flexItem sitelogo">
-        <img src="Logo WebDev.PNG" alt="">
-    </div>
-    <div class=" flexItem passionstatement"><span>Passion Statement</span></div>
-    <div class="flexItem home"><span>Home</span></div>
-    <div class="flexItem necklace"><span>Necklace</span></div>
-    <div class="flexItem bracelet"><span>Bracelets</span></div>
-    <div class="flexItem earring"><span>Earring</span></div>
-    <div class="flexItem ring"><span>Ring</span></div>
-     -->
+    
     </nav>
     <div class="container">
       <div class="itemlist">
@@ -100,5 +91,8 @@
       </div>
     </div>
     <!-- End of Container -->
+    <script src="buyingpage.js">   </script>
+      
+ 
   </body>
 </html>
