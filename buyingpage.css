@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  gap: 20px;
+  background-color: #0e0e0e;
+  height: 50px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline white;
+  height: 100%;
+}
+
+nav .sitelogo{
+  margin-left: 25px;
+}
+
+nav img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+nav .passionstatement {
+  margin-right: auto;
+  margin-left: -15px;
+}
+
+nav .closesidebar{
+  display: none;
+}
+
+.sidebar{
+  margin-top: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #0e0e0e;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+svg{
+    fill: white;
+}
+
+.sidebarlogo{
+  display: none;
+}
+
+
+
+.container {
+  width: 900px;
+  height: max-content;
+  max-width: 90vw;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #686868;
+  color: white;
+}
+
+.container .itemlist {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px;
+  height: max-content;
+  text-align: center;
+  margin: 2px;
+  padding: 5px;
+}
+.item .itemimage img {
+  width: 85px;
+  height: 85px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .checkoutinfo {
+  display: grid;
+  grid-template-rows: 60px 45px;
+  border-top: BLACK solid 3px;
+  padding: 2px;
+}
+
+.checkoutinfo .itemcount {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.checkoutinfo .placeholder {
+  width: 78px;
+  height: 85px;
+}
+
+.checkoutinfo .checkoutbtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.checkoutinfo button {
+  font-family: "Poppins", sans-serif;
+}
+
+.checkoutbtn .backbtn {
+  background-color: silver;
+  padding-inline: 40px;
+}
+.checkoutbtn .orderbtn {
+  background-color: gold;
+  padding-inline: 40px;
+}
+
+@media (max-width:800px) {
+    .hideonmobile{
+        display: none;
+    }
+
+    .sidebarlogo{
+      display: flex;
+    }
+
+    .closesidebar{
+      display: none;
+    }
+    
+    nav .sitelogo{
+      margin-left: 25px;
+    }
+
+}
