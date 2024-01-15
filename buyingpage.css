@@ -165,13 +165,10 @@ svg{
         display: none;
     }
 
-    .sidebarlogo{
+    .sidebarbutton{
       display: flex;
     }
 
-    .closesidebar{
-      display: none;
-    }
     
     nav .sitelogo{
       margin-left: 25px;
