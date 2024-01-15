@@ -5,6 +5,7 @@ function openSideBar(){
 if (showsidebar.style.display === "none") 
 {
 showsidebar.style.display = "flex";
+document.getElementById("sidebarlogo").innerHTML = "✖";
 
 
 } else 
