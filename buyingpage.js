@@ -12,6 +12,7 @@ document.getElementById("sidebarlogo").innerHTML = "✖";
 
 {
 showsidebar.style.display = "none";
+document.getElementById("sidebarlogo").innerHTML = "☰";
 }
 
 }
