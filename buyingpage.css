@@ -112,9 +112,10 @@ svg{
   margin: 2px;
   padding: 5px;
 }
-.item .itemimage img {
+.item .itemimage {
   width: 85px;
   height: 85px;
+  border-radius: 15px;
 }
 
 .item {
