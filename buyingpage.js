@@ -67,9 +67,9 @@ const addDataToHTML= () => {
             newProduct.innerHTML = //here comes the literal that does the html magic
             ` <img src="${product.image}" alt="" class="itemimage">
           
-            <h2>${product.name}</h2>
-            <div class="quantity">${product.id}</div>
-            <div class="price">$${product.price}</div>`;
+            <div class = "productname"><h2>${product.name}</h2></div>
+            <p class="quantity">${product.id}</p>
+            <p class="price">$${product.price}</p>`;
             listProductHTML.appendChild(newProduct); //Adds the generated div class inside the itemlist class
         });
     }

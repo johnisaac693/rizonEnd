@@ -116,12 +116,52 @@ svg{
   width: 85px;
   height: 85px;
   border-radius: 15px;
+  /*! margin-left: 0%; */
 }
 
 .item {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  /*! gap: ; */
+  
+  margin-inline: 5%;
+}
+
+.item .productname{
+  text-align: center;
+  box-sizing: border-box;
+  width: 197px;
+  padding: 20px;
+  /*! margin-right: -10%; */
+}
+
+.itemlist p{
+  /*! flex-grow: 1; */
+  text-align: center;
+  box-sizing: border-box;
+  width: 128px;
+}
+
+.itemcount .amount{
+  text-align: center;
+  box-sizing: border-box;
+  width: 128px;
+}
+
+
+
+.itemcount h2{
+  text-align: center;
+  margin: 2px;
+  padding: 5px;
+}
+
+
+.itemcount #price{
+  text-align: center;
+  box-sizing: border-box;
+  width: 128px;
 }
 
 .container .checkoutinfo {
@@ -134,12 +174,13 @@ svg{
 .checkoutinfo .itemcount {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-inline: 5%;
+  padding-inline: 26px;
 }
 
-.checkoutinfo .placeholder {
-  width: 78px;
-  height: 85px;
+.itemcount .placeholder{
+  width: 85px;
 }
 
 .checkoutinfo .checkoutbtn {
@@ -161,7 +202,7 @@ svg{
   padding-inline: 40px;
 }
 
-@media (max-width:800px) {
+@media (max-width:768px) {
     .hideonmobile{
         display: none;
     }
