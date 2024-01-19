@@ -107,10 +107,11 @@ svg{
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 2px;
-  height: max-content;
+  height:500px;
   text-align: center;
   margin: 2px;
   padding: 5px;
+  overflow: scroll;
 }
 .item .itemimage {
   width: 85px;
@@ -191,6 +192,8 @@ svg{
 
 .checkoutinfo button {
   font-family: "Poppins", sans-serif;
+  border: none;
+  cursor: pointer;
 }
 
 .checkoutbtn .backbtn {

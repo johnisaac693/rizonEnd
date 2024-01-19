@@ -1,9 +1,10 @@
 let products = [];
 let listProductHTML = document.querySelector('.itemlist'); //selects the itemlist class
+let cartProducts = []; // I WILL USE LATER
 
 const initApp = () =>{
     // fetching data from json file and puts them into the list products
-    fetch('products.json')
+    fetch('../JS/products.json')
     .then(response => response.json())
     .then(data => {
         products = data;
@@ -51,10 +52,6 @@ const getNumberOfItems = () => {
 }
 
 
-
-
-
-
 //const because the formula never changes
 const addDataToHTML= () => {
     if (products.length > 0) {
@@ -73,7 +70,20 @@ const addDataToHTML= () => {
             listProductHTML.appendChild(newProduct); //Adds the generated div class inside the itemlist class
         });
     }
-
+    else
+    {
+        let emptyMessage = document.createElement('div');
+        emptyMessage.classList.add('empty-message');
+        emptyMessage.textContent = `This section is empty! 
+        Add some items to cart to fill this up!`;
+        listProductHTML.appendChild(emptyMessage);
+    }
+    
     
 }
-
+//confirms purchase first before checkout
+ function confirmPurchase() {
+    if (confirm("Are you sure you want to proceed with your purchase? Double check your cart before proceeding with the transaction")) {
+        
+    } 
+ }
