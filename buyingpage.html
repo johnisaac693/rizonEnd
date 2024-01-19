@@ -1,0 +1,59 @@
+<!-- 
+        If you want to run this program, run it thru Live server or Live Preview. 
+        The Javascript and Json will NOT work without a server
+       -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buying Page</title>
+    <link rel="stylesheet" href="buyingpage.css" />
+    
+  </head>
+  <body>
+    <nav>
+      <div class="flexitem sitelogo"><img src="Logo WebDev.PNG" alt="" /></div>
+      <div class="passionstatement"><span>Passion Statement</span></div>
+      <ul class="sidebar" id="sidebar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">NECKLACE</a></li>
+        <li><a href="#">BRACELETS</a></li>
+        <li><a href="#">EARRINGS</a></li>
+        <li><a href="#">RINGS</a></li>
+      </ul>
+      <ul class="hideonmobile">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">NECKLACE</a></li>
+        <li><a href="#">BRACELETS</a></li>
+        <li><a href="#">EARRINGS</a></li>
+        <li><a href="#">RINGS</a></li>
+      </ul>
+      <button class="sidebarbutton" onclick="openSideBar()" id="sidebarlogo">☰</button>
+
+    
+    </nav>
+    <div class="container">
+      <div class="itemlist">
+        <!-- item html in javascript   -->
+      </div>
+      <div class="checkoutinfo">
+        <div class="itemcount">
+          <div class="placeholder"></div>
+          <p class="total flexItem"><h2>GRAND TOTAL</h2></p>
+          <p class="amount flexItem" id="numberofitems">5</p>
+          <p class="price flexItem" id="price">$</p>
+        </div>
+        <div class="checkoutbtn">
+          <button class="backbtn flexItem">Back</button>
+          <button class="orderbtn flexItem">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <!-- End of Container -->
+    <script src="buyingpage.js">   </script>
+      
+ 
+  </body>
+</html>
