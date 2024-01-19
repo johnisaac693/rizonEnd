@@ -18,5 +18,25 @@
         "name":"NECKLACE",
         "price": 290,
         "image": "https://picsum.photos/200"
+    },
+    {
+        "id": 1234,
+        "name":"EARRING",
+        "price": 100,
+        "image": "https://picsum.photos/200"
+      
+
+    },
+    {
+        "id": 2468,
+        "name":"BRACELET",
+        "price": 250,
+        "image": "https://picsum.photos/200"
+    },
+    {
+        "id": 36912,
+        "name":"NECKLACE",
+        "price": 290,
+        "image": "https://picsum.photos/200"
     }
 ]
