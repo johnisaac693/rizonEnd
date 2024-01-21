@@ -58,12 +58,11 @@ const addDataToHTML= () => {
         products.forEach(product => {
             /*Creates a div class based based on the files from the json file
              */
-            let newProduct = document.createElement('div');
+            let newProduct = document.createElement('li');
             newProduct.dataset.id = product.id;
             newProduct.classList.add('item');
             newProduct.innerHTML = //here comes the literal that does the html magic
             ` <img src="${product.image}" alt="" class="itemimage">
-          
             <div class = "productname"><h2>${product.name}</h2></div>
             <p class="quantity">${product.id}</p>
             <p class="price">$${product.price}</p>`;
