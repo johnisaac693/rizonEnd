@@ -113,6 +113,10 @@ svg{
   padding: 5px;
   overflow: scroll;
 }
+
+.itemlist::-webkit-scrollbar {
+  display: none;
+}
 .item .itemimage {
   width: 85px;
   height: 85px;
