@@ -7,7 +7,7 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("LogoPics&Stuffs/bg.jpg");
+    background-image: url("/Pics/bg\ image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
