@@ -5,39 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="/CSS/AboutUs.css">
+
+    <link rel="stylesheet" href="/CSS/nav and footer.css">
     <script src="https://kit.fontawesome.com/1bd85efa54.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <nav>
-    <div class ="logo">
-       <img class="logo" src="/Pics/Logo WebDev.PNG"/> 
-    </div>
-       <a href="#" style="text-decoration: none">Timeless Treasures</a>
-    
 
-    <ul class="Right Nav" style="color: white;">
-       <a href="homepage.html">Home</a>
+    <nav>
+        <div class="flexitem sitelogo"><img src="/Pics/Logo WebDev.PNG" alt="" /></div>
+        <div class="passionstatement"><span>Passion Statement</span></div>
+        <ul class="sidebar" id="sidebar">
+          <li><a href="homepageniSean.html">HOME</a></li>
+          <li><a href="Products.html">PRODUCTS</a></li>
+          <li><a href="AboutUs.html">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+        <ul class="hideonmobile">
+         <li><a href="homepageniSean.html">HOME</a></li>
+         <li><a href="Products.html">PRODUCTS</a></li>
+         <li><a href="AboutUs.html">ABOUT US</a></li>
+         <li><a href="#">CONTACT US</a></li>
+         <li><a href="buyingpage.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+        <button class="sidebarbutton" onclick="openSideBar()" id="sidebarlogo">☰</button>
+      </nav>
 
-       <li class="neck nav-right">
-       <a href="Products.html">Products</a>
-       </li>
 
-       <li class="ear nav-right">
-       <a href="AboutUs.html">AboutUs</a>
-       </li>
-
-       <li class="ring nav-right">
-       <a href="#">ContactUs</a>
-       </li>
-
-       <li class="pierc nav-right">
-       <a href="#"></a>
-       <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-       </li>
-
-    </ul>
-  </nav>
     <div class="About">
         <header>
         <p class="texttop">About Timeless Treasures</p>

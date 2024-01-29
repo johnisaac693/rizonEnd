@@ -5,126 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="/CSS/Products.css">
+
+    <link rel="stylesheet" href="/CSS/nav and footer.css">
     <script src="https://kit.fontawesome.com/1bd85efa54.js" crossorigin="anonymous"></script>
+    
+    
 </head>
 <body>
     <nav>
-        <div class ="logo">
-           <img class="logo" src="/Pics/Logo WebDev.PNG"/> 
-        </div>
-           <a href="#" style="text-decoration: none">Passion Statement</a>
-        
-    
-        <ul class="Right Nav" style="color: white;">
-           <li class="home">
-           <a href="homepage.html">Home</a>
-           </li>
-           <li class="neck nav-right">
-           <a href="Products.html">Products</a>
-           </li>
-    
-           <li class="ear nav-right">
-           <a href="AboutUs.html">AboutUs</a>
-           </li>
-    
-           <li class="ring nav-right">
-           <a href="#">ContactUs</a>
-           </li>
-    
-           <li class="pierc nav-right">
-           <a href="#"></a>
-           <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-           </li>
-    
+
+        <div class="flexitem sitelogo"><img src="/Pics/Logo WebDev.PNG" alt="" /></div>
+        <div class="passionstatement"><span>Passion Statement</span></div>
+        <ul class="sidebar" id="sidebar">
+          <li><a href="homepageniSean.html">HOME</a></li>
+          <li><a href="Products.html">PRODUCTS</a></li>
+          <li><a href="AboutUs.html">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
+        <ul class="hideonmobile">
+         <li><a href="homepageniSean.html">HOME</a></li>
+         <li><a href="Products.html">PRODUCTS</a></li>
+         <li><a href="AboutUs.html">ABOUT US</a></li>
+         <li><a href="#">CONTACT US</a></li>
+         <li><a href="buyingpage.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+        </ul>
+        <button class="sidebarbutton" onclick="openSideBar()" id="sidebarlogo">☰</button>
       </nav>
-    <div class="NeckContainer">
-        <div class="big-box">Necklace</div>
-        <div class="small-box-container">
-            <div class="small-box"> 
-                <img src="/necklace/Mystic Moonstone Cascade Necklace.jpg" alt="Pic1"> 
-                <a href="#">Mystic Moonstone Cascade Necklace</a>
-            </div> 
-            <div class="small-box"> 
-                <img src="/necklace/Regal Orchid Pearl Strand.jpg" alt="Pic2"> 
-                <a href="#">Regal Orchid Pearl Strand</a>
-            </div>
-            <div class="small-box"> 
-                <img src="/necklace/Sapphire Serenade Collar.jpg" alt="Pic3"> 
-                <a href="#">Sapphire Serenade Collar</a>
-            </div>
-            <div class="small-box"> 
-                <img src="/necklace/Whispering Willow Pendant.jpg" alt="Pic4"> 
-                <a href="#">Whispering Willow Pendant</a>
-            </div>
-        </div>
+
+
+    <div class="ProductContainer">
+        <div class="box-header">Products</div>
+        <ul class="product-container">
+           
+        </ul>
       </div>
 
-      <div class="BraceContainer">
-        <div class="big-box">Bracelet</div>
-        <div class="small-box-container">
-            <div class="small-box"> 
-                <img src="/Bracelet/Aurora Borealis Beaded Bracelet.png" alt="Pic1"> 
-                <a href="#">Aurora Borealis Beaded Bracelet</a>
-            </div> 
-            <div class="small-box"> 
-                <img src="/Bracelet/Charm of Prosperity chain Bracelet.png" alt="Pic2"> 
-                <a href="#">Charm of Prosperity chain Bracelet</a>
-            </div>
-            <div class="small-box"> 
-                <img src="/Bracelet/eternal love knot cuff.png" alt="Pic3"> 
-                <a href="#">Eternal Love Knot Cuff</a>
-            </div>
-            <div class="small-box"> 
-                <img src="/Bracelet/Luminescent Sea Glass Bangle.png" alt="Pic4"> 
-                <a href="#">Luminescent Sea Glass Bangle</a>
-            </div>
-        </div>
-      </div>
-
-      <div class="EarContainer">
-        <div class="big-box">Earrings</div>
-        <div class="small-box-container">
-            <div class="small-box"> 
-                <img src="/earring/Crimson Cascade Drop Earrings.png" alt="Pic1"> 
-                <a href="#">Crimson Cascade Drop Earrings</a>
-            </div> 
-            <div class="small-box"> 
-                <img src="/earring/Golden-Hour-Hoop-Earrings.png" alt="Pic2"> 
-                <a href="#">Golden-Hour-Hoop-Earrings</a>
-            </div>
-            <div class="small-box"> 
-                <img src="/earring/Opulent-Orchid-Chandelier-Earrings.png" alt="Pic3"> 
-                <a href="#">Opulent-Orchid-Chandelier-Earrings</a>
-            </div>
-            <div class="small-box"> 
-                <img src="/earring/Starry night Stud earrings.png" alt="Pic4"> 
-                <a href="#">Starry night Stud earrings</a>
-            </div>
-        </div>
-      </div>
-
-      <div class="RingContainer">
-        <div class="big-box">Rings</div>
-        <div class="small-box-container">
-            <div class="small-box"> 
-                <img src="/Ring/regal Sapphire crown ring.png" alt="Pic3"> 
-                <a href="#">Regal Sapphire crown ring</a>
-            </div><div class="small-box"> 
-                <img src="/Ring/Eternal-Embrace-Diamond-Ring.png" alt="Pic1"> 
-                <a href="#">Eternal-Embrace-Diamond-Ring</a>
-            </div> 
-            <div class="small-box"> 
-                <img src="/Ring/Mystic-Topaz-Halo-Ring.png" alt="Pic2"> 
-                <a href="#">Mystic-Topaz-Halo-Ring</a>
-            </div>
-            
-            <div class="small-box"> 
-                <img src="/Ring/whispering wind rose gold stack.png" alt="Pic4"> 
-                <a href="#">Whispering Wind rose gold stack</a>
-            </div>
-        </div>
-      </div>
-
+     
+<script src="/JS/producthandling.js"></script>
 </body>
+
+
+
 </html>
