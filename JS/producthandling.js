@@ -1,5 +1,7 @@
 let products = [];
 
+localStorage
+
 const addDataToHTML = () => {
     if (products.length > 0) {
         console.log("Working!");
@@ -10,7 +12,8 @@ const addDataToHTML = () => {
 
             listItem.innerHTML = 
             `<img src="${product.image}" alt="${product.name}">
-             <p>${product.name}</p>`;
+             <p>${product.name}</p>
+             <button class = "addToCart" >Add To Cart</button>`;
 
             document.querySelector('.product-container').appendChild(listItem);
             console.log("Done!");

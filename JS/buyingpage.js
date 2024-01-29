@@ -1,57 +1,9 @@
-let products = [];
+
 let listProductHTML = document.querySelector('.itemlist'); //selects the itemlist class
 let cartProducts = [
-    {
-        "id": "NCKLC01",
-        "name":"Mystic Moonstone Cascade Necklace",
-        "type": "necklace",
-        "price": 100,
-        "image" : "/necklace/Mystic Moonstone Cascade Necklace.jpg"
-      
-
-    },
-    {
-        "id": "NCKLC02",
-        "name":"Regal Orchid Pearl Strand",
-        "type": "necklace",
-        "price": 100,
-        "image" : "/necklace/Regal Orchid Pearl Strand.jpg"
-        
-      
-    },
-    
-    {
-        "id": "NCKLC03",
-        "name":"Sapphire Serenade Collar",
-        "type": "necklace",
-        "price": 100,
-        "image" : "/necklace/Sapphire Serenade Collar.jpg"
-        
-    },
-    {
-        "id": "NCKLC04",
-        "name":"Whispering Willow Pendant",
-        "type": "necklace",
-        "price": 100,
-        "image" : "/necklace/Whispering Willow Pendant.jpg"
-    }
-    
-    
+   
 ]; // I WILL USE LATER
 
-const initApp = () =>{
-    // fetching data from json file and puts them into the list products
-    fetch('../JS/products.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        addDataToHTML();
-        updateTotalPrice();
-    })
-}
-
-//initApp is the GIVEN NAME for a function that activates when the app starts
-initApp(); 
 
 //const because the formula never changes
 const addDataToHTML= () => {
