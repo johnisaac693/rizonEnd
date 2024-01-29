@@ -1,42 +1,127 @@
 [
     {
-        "id": 1234,
-        "name":"EARRING",
+        "id": "NCKLC01",
+        "name":"Mystic Moonstone Cascade Necklace",
+        "type": "necklace",
         "price": 100,
-        "image": "https://picsum.photos/200"
+        "image" : "/necklace/Mystic Moonstone Cascade Necklace.jpg"
       
 
     },
     {
-        "id": 2468,
-        "name":"BRACELET",
-        "price": 250,
-        "image": "https://picsum.photos/200"
-    },
-    {
-        "id": 36912,
-        "name":"NECKLACE",
-        "price": 290,
-        "image": "https://picsum.photos/200"
-    },
-    {
-        "id": 1234,
-        "name":"EARRING",
+        "id": "NCKLC02",
+        "name":"Regal Orchid Pearl Strand",
+        "type": "necklace",
         "price": 100,
-        "image": "https://picsum.photos/200"
+        "image" : "/necklace/Regal Orchid Pearl Strand.jpg"
+        
       
+    },
+    {
+        "id": "NCKLC03",
+        "name":"Sapphire Serenade Collar",
+        "type": "necklace",
+        "price": 100,
+        "image" : "/necklace/Sapphire Serenade Collar.jpg"
+        
+    },
+    {
+        "id": "NCKLC04",
+        "name":"Whispering Willow Pendant",
+        "type": "necklace",
+        "price": 100,
+        "image" : "/necklace/Whispering Willow Pendant.jpg"
+    },
 
+    {
+        "id": "BRCLTC01",
+        "name":"Aurora Borealis Beaded Bracelet",
+        "type": "bracelet",
+        "price": 100,
+        "image" : "/Bracelet/Aurora Borealis Beaded Bracelet.png" 
     },
     {
-        "id": 2468,
-        "name":"BRACELET",
-        "price": 250,
-        "image": "https://picsum.photos/200"
+        "id": "BRCLTC02",
+        "name":"Charm of Prosperity Chain",
+        "type": "bracelet",
+        "price": 100,
+        "image" : "/Bracelet/Charm of Prosperity chain Bracelet.png" 
     },
     {
-        "id": 36912,
-        "name":"NECKLACE",
-        "price": 290,
-        "image": "https://picsum.photos/200"
+        "id": "BRCLTC03",
+        "name":"Eternal Love Knot Cuff",
+        "type": "bracelet",
+        "price": 100,
+        "image" : "/Bracelet/eternal love knot cuff.png" 
+    },
+    {
+        "id": "BRCLTC04",
+        "name":"Luminescent Sea Glass Bangle",
+        "type": "bracelet",
+        "price": 100,
+        "image" : "/Bracelet/Luminescent Sea Glass Bangle.png" 
+    },
+
+    {
+        "id": "EARNG01",
+        "name":"Crimson Cascade Drop Earrings",
+        "type": "earring",
+        "price": 100,
+        "image" : "/earring/Crimson Cascade Drop Earrings.png" 
+    },
+    {
+        "id": "EARNG02",
+        "name":"Golden Hour Hoop Earrings",
+        "type": "earring",
+        "price": 100,
+        "image" : "/earring/Golden-Hour-Hoop-Earrings.png" 
+    },
+    {
+        "id": "EARNG03",
+        "name":"Opulent Orchid Chandelier Earrings",
+        "type": "earring",
+        "price": 100,
+        "image" : "/earring/Opulent-Orchid-Chandelier-Earrings.png" 
+    },
+    {
+        "id": "EARNG04",
+        "name":"Starry Night Stud Earrings",
+        "type": "earring",
+        "price": 100,
+        "image" : "/earring/Starry night Stud earrings.png" 
+    },
+
+    {
+        "id": "RING01",
+        "name":"Eternal Embrace Diamond Ring",
+        "type": "earring",
+        "price": 100,
+        "image" : "/Ring/Eternal-Embrace-Diamond-Ring.png" 
+    },
+    
+    {
+        "id": "RING02",
+        "name":"Mystic Topaz Halo Ring",
+        "type": "earring",
+        "price": 100,
+        "image" : "/Ring/Mystic-Topaz-Halo-Ring.png" 
+    },
+    {
+        "id": "RING03",
+        "name":"Regal Sapphire Crown Ring",
+        "type": "earring",
+        "price": 100,
+        "image" : "/Ring/regal Sapphire crown ring.png" 
+    },
+    
+    {
+        "id": "RING04",
+        "name":"Whispering Wind Rose Gold Stack",
+        "type": "earring",
+        "price": 100,
+        "image" : "/Ring/whispering wind rose gold stack.png" 
     }
+    
+        
+    
 ]
