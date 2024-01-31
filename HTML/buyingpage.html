@@ -12,6 +12,7 @@
            <link rel="stylesheet" href="../CSS/buyingpage.css" />
            <link rel="stylesheet" href="/CSS/nav and footer.css">
            <script src="https://kit.fontawesome.com/45028fbf29.js" crossorigin="anonymous"></script>
+           
          </head>
          <body>
            <nav>
@@ -53,9 +54,25 @@
              </div>
            </div>
            <!-- End of Container -->
-           <script src="/JS/buyingpage.js">   </script>
+          
              
-        
+           <script>
+            function openSideBar() {
+        var navbar = document.querySelector('.sidebar');
+        var sidebarLogo = document.getElementById('sidebarlogo');
+    
+        if (navbar.style.display === 'none') {
+          navbar.style.display = 'flex';
+          sidebarLogo.innerHTML = '✖';
+        } else {
+          navbar.style.display = 'none';
+          sidebarLogo.innerHTML = '☰'; 
+        }
+    }
+        </script>
          </body>
        </html>
+       <script src="/JS/producthandling.js"></script>
+        <script src="/JS/buyingpage.js"></script>
+        <script src="/JS/navbar.js"></script>
        

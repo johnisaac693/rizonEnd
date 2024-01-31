@@ -1,8 +1,10 @@
 
+
 let listProductHTML = document.querySelector('.itemlist'); //selects the itemlist class
-let cartProducts = [
-   
-]; // I WILL USE LATER
+var localCart = localStorage.getItem('cart');
+console.log(localCart);
+var cartProducts = JSON.parse(localCart);
+console.log(cartProducts);
 
 
 //const because the formula never changes
@@ -67,7 +69,7 @@ const getNumberOfItems = () => {
 
 }
 
-
+addDataToHTML();
 
     
 }

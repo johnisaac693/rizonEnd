@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="/CSS/nav and footer.css">
     <script src="https://kit.fontawesome.com/1bd85efa54.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
 
@@ -82,7 +83,20 @@
    
 
       
-    
+    <script>
+        function openSideBar() {
+    var navbar = document.querySelector('.sidebar');
+    var sidebarLogo = document.getElementById('sidebarlogo');
+
+    if (navbar.style.display === 'none') {
+      navbar.style.display = 'flex';
+      sidebarLogo.innerHTML = '✖';
+    } else {
+      navbar.style.display = 'none';
+      sidebarLogo.innerHTML = '☰'; 
+    }
+}
+    </script>
 </body>
 </html>
 
