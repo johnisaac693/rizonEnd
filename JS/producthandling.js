@@ -1,6 +1,6 @@
 //Product list for the product page
 let products = [];
-
+console.log(localStorage.getItem('cart'));
 //Retrieves Cart Data
 const getCartFromMemory = () => {
   const cart = JSON.parse(localStorage.getItem('cart'));
@@ -76,14 +76,39 @@ const addToCart = (productId) => {
 
 //Calls the Add products to html function on page load
 const initApp = async () => {
-    try {
-        const response = await fetch('../JS/products.json');
-        const data = await response.json();
-        products = data;
-        addDataToHTML(); // Call addDataToHTML after fetching the data
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    cart.forEach(
+        function(e) {
+            const node = document.createElement("li");
+            const itemNode = document.createTextNode("id: " + e.id + " name: " + e.name);
+            node.appendChild(itemNode);
+
+            document.getElementById("productContainer").appendChild(node);
+        }
+    )
+
+    /* correct way to fetch json file
+    return fetch('/JS/products.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+    })
+    .then(json => {
+        json.forEach(e => {
+            const node = document.createElement("li");
+            const itemNode = document.createTextNode("id: " + e.id + " name: " + e.name);
+            node.appendChild(itemNode);
+
+            document.getElementById("productContainer").appendChild(node);
+        });
+    })
+    .catch(function () {
+        this.dataError = true;
+    })*/
+
+
 };
 
 initApp();

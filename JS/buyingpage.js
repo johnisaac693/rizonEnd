@@ -6,9 +6,10 @@ console.log(localCart);
 var cartProducts = JSON.parse(localCart);
 console.log(cartProducts);
 
-
+console.log('cart' + localStorage.getItem('cart'));
 //const because the formula never changes
 const addDataToHTML= () => {
+    console.log('addToHTML');
     if (cartProducts.length > 0) {
         cartProducts.forEach(product => {
             /*Creates a div class based based on the files from the json file
