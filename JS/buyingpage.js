@@ -1,14 +1,134 @@
 
 
 let listProductHTML = document.querySelector('.itemlist'); //selects the itemlist class
-var localCart = localStorage.getItem('cart');
-console.log(localCart);
-var cartProducts = JSON.parse(localCart);
-console.log(cartProducts);
+let cartProducts = [ {
+    "id": "NCKLC01",
+    "name":"Mystic Moonstone Cascade Necklace",
+    "type": "necklace",
+    "price": 100,
+    "image" : "/necklace/Mystic Moonstone Cascade Necklace.jpg"
+  
+
+},
+{
+    "id": "NCKLC02",
+    "name":"Regal Orchid Pearl Strand",
+    "type": "necklace",
+    "price": 100,
+    "image" : "/necklace/Regal Orchid Pearl Strand.jpg"
+    
+  
+},
+{
+    "id": "NCKLC03",
+    "name":"Sapphire Serenade Collar",
+    "type": "necklace",
+    "price": 100,
+    "image" : "/necklace/Sapphire Serenade Collar.jpg"
+    
+},
+{
+    "id": "NCKLC04",
+    "name":"Whispering Willow Pendant",
+    "type": "necklace",
+    "price": 100,
+    "image" : "/necklace/Whispering Willow Pendant.jpg"
+},
+
+{
+    "id": "BRCLTC01",
+    "name":"Aurora Borealis Beaded Bracelet",
+    "type": "bracelet",
+    "price": 100,
+    "image" : "/Bracelet/Aurora Borealis Beaded Bracelet.png" 
+},
+{
+    "id": "BRCLTC02",
+    "name":"Charm of Prosperity Chain",
+    "type": "bracelet",
+    "price": 100,
+    "image" : "/Bracelet/Charm of Prosperity chain Bracelet.png" 
+},
+{
+    "id": "BRCLTC03",
+    "name":"Eternal Love Knot Cuff",
+    "type": "bracelet",
+    "price": 100,
+    "image" : "/Bracelet/eternal love knot cuff.png" 
+},
+{
+    "id": "BRCLTC04",
+    "name":"Luminescent Sea Glass Bangle",
+    "type": "bracelet",
+    "price": 100,
+    "image" : "/Bracelet/Luminescent Sea Glass Bangle.png" 
+},
+
+{
+    "id": "EARNG01",
+    "name":"Crimson Cascade Drop Earrings",
+    "type": "earring",
+    "price": 100,
+    "image" : "/earring/Crimson Cascade Drop Earrings.png" 
+},
+{
+    "id": "EARNG02",
+    "name":"Golden Hour Hoop Earrings",
+    "type": "earring",
+    "price": 100,
+    "image" : "/earring/Golden-Hour-Hoop-Earrings.png" 
+},
+{
+    "id": "EARNG03",
+    "name":"Opulent Orchid Chandelier Earrings",
+    "type": "earring",
+    "price": 100,
+    "image" : "/earring/Opulent-Orchid-Chandelier-Earrings.png" 
+},
+{
+    "id": "EARNG04",
+    "name":"Starry Night Stud Earrings",
+    "type": "earring",
+    "price": 100,
+    "image" : "/earring/Starry night Stud earrings.png" 
+},
+
+{
+    "id": "RING01",
+    "name":"Eternal Embrace Diamond Ring",
+    "type": "earring",
+    "price": 100,
+    "image" : "/Ring/Eternal-Embrace-Diamond-Ring.png" 
+},
+
+{
+    "id": "RING02",
+    "name":"Mystic Topaz Halo Ring",
+    "type": "earring",
+    "price": 100,
+    "image" : "/Ring/Mystic-Topaz-Halo-Ring.png" 
+},
+{
+    "id": "RING03",
+    "name":"Regal Sapphire Crown Ring",
+    "type": "earring",
+    "price": 100,
+    "image" : "/Ring/regal Sapphire crown ring.png" 
+},
+
+{
+    "id": "RING04",
+    "name":"Whispering Wind Rose Gold Stack",
+    "type": "earring",
+    "price": 100,
+    "image" : "/Ring/whispering wind rose gold stack.png" 
+}];
+
 
 
 //const because the formula never changes
 const addDataToHTML= () => {
+    listProductHTML.innerHTML = '';
     if (cartProducts.length > 0) {
         cartProducts.forEach(product => {
             /*Creates a div class based based on the files from the json file
@@ -33,28 +153,11 @@ const addDataToHTML= () => {
         listProductHTML.appendChild(emptyMessage);
     }
     
-
-function openSideBar(){
-    var showsidebar = document.getElementById("sidebar");
     
-
-if (showsidebar.style.display === "none") 
-{
-showsidebar.style.display = "flex";
-document.getElementById("sidebarlogo").innerHTML = "✖";
-
-
-} else 
-
-{
-showsidebar.style.display = "none";
-document.getElementById("sidebarlogo").innerHTML = "☰";
 }
 
-}
 
-/*Today I learned, functions do not activate automatically
-You want this function to activate automatically? Put it in the initapp function! */
+
 const updateTotalPrice = () => {
     let totalPrice = cartProducts.reduce((total, product) => total + product.price, 0);
     document.getElementById('price').innerHTML = `$${totalPrice.toFixed(2)}`;
@@ -69,13 +172,24 @@ const getNumberOfItems = () => {
 
 }
 
-addDataToHTML();
 
+
+
+initApp = async () => {
     
-}
+        addDataToHTML(); // Call addDataToHTML after fetching the data
+        updateTotalPrice();
+        getNumberOfItems();
+    
+};
+
+initApp();
 //confirms purchase first before checkout
  function confirmPurchase() {
+    console.log(cartProducts)
     if (confirm("Are you sure you want to proceed with your purchase? Double check your cart before proceeding with the transaction")) {
-        
+        cartProducts.length = 0;
+        console.log(cartProducts)
+        addDataToHTML();
     } 
  }
