@@ -1,11 +1,15 @@
 //Product list for the product page
 let products = [];
 
-//Retrieves Cart Data
 const getCartFromMemory = () => {
-  const cart = JSON.parse(localStorage.getItem('cart'));
-  return cart;
-};
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    return cart;
+  };
+
+let cartItem = getCartFromMemory() || [];
+
+
+
 
 //Updates cart data
 const updateCartInMemory = (cart) => {
@@ -45,8 +49,9 @@ const addDataToHTML = () => {
 
 //For experimental purposes. Clear the local array storage
 const clearCart = () => {
-  localStorage.removeItem('cart');
+    cartItem.length = 0;
   alert('CART CLEARED!!!');
+  updateCartInMemory(cartItem);
 };
 
 //Add To Cart Button
@@ -85,5 +90,4 @@ const initApp = async () => {
         console.error('Error fetching data:', error);
     }
 };
-
 initApp();
