@@ -1,12 +1,13 @@
-function openSideBar() {
-    var navbar = document.querySelector('sidebar');
+
+        function openSideBar() {
+    var navbar = document.querySelector('.sidebar');
     var sidebarLogo = document.getElementById('sidebarlogo');
 
     if (navbar.style.display === 'none') {
       navbar.style.display = 'flex';
-      sidebarLogo.innerHTML = '☰'; // Change this to the original text/content of the button
+      sidebarLogo.innerHTML = '✖';
     } else {
       navbar.style.display = 'none';
-      sidebarLogo.innerHTML = '✖'; 
+      sidebarLogo.innerHTML = '☰'; 
     }
 }
