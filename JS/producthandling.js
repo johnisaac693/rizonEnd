@@ -19,7 +19,7 @@ const updateCartInMemory = (cart) => {
 };
 
 
-
+//Ouputs the json files into the product container
 const addDataToHTML = () => {
     const productContainer = document.querySelector('.product-container');
     productContainer.innerHTML = ''; // Clear existing content
@@ -47,7 +47,7 @@ const addDataToHTML = () => {
     }
 };
 
-//For experimental purposes. Clear the local array storage
+//Clears the local array storage
 const clearCart = () => {
     cartItem.length = 0;
   alert('CART CLEARED!!!');
@@ -55,7 +55,7 @@ const clearCart = () => {
 };
 
 //Add To Cart Button
-const addToCartButton = (productID) => {
+function addToCartButton (productID)  {
     addToCart(productID);
 };
 
