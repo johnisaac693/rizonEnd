@@ -19,7 +19,8 @@ const putDataToHTML= () => {
             ` <img src="${product.image}" alt="" class="itemimage">
             <div class = "productname"><h2>${product.name}</h2></div>
             <p class="quantity">${product.id}</p>
-            <p class="price">$${product.price}</p>`;
+            <p class="price">$${product.price}</p>
+            <button class = "removeFromCart" onclick = "removeFromCartButton('${product.id}')">Remove</button>`;
             listProductHTML.appendChild(newProduct); //Adds the generated div class inside the itemlist class
         });
     }
@@ -50,6 +51,34 @@ const getNumberOfItems = () => {
 
 
 }
+
+
+//Remove From Cart Button
+function removeFromCartButton(productId) {
+    removeFromCart(productId);
+}
+
+//Removes item from array after button click
+const removeFromCart = (productId) => {
+    cartItem = getCartFromMemory();
+    
+    // Find the index of the item with the matching productId in the cart
+    const index = cartItem.findIndex(item => item.id === productId);
+
+    if (index !== -1) {
+        // Remove the item at the found index
+        cartItem.splice(index, 1);
+        updateCartInMemory(cartItem); // Update the cart in memory
+        cartProducts = cartItem;
+    } else {
+        alert('Item not found in the cart!');
+    }
+
+    putDataToHTML(); // Update the displayed cart contents
+    updateTotalPrice(); // Update the total price displayed
+    getNumberOfItems(); // Update the number of items displayed
+};
+
 
 
 
