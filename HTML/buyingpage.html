@@ -49,7 +49,7 @@
                  <p class="price flexItem" id="price">$</p>
                </div>
                <div class="checkoutbtn">
-                 <button class="backbtn flexItem">Back</button>
+                 <button class="backbtn flexItem"> <a href="Products.html">Back</a></button>
                  <button class="orderbtn flexItem" onclick="confirmPurchase()">Place Order</button>
                </div>
              </div>
@@ -57,20 +57,7 @@
            <!-- End of Container -->
           
              
-           <script>
-            function openSideBar() {
-        var navbar = document.querySelector('.sidebar');
-        var sidebarLogo = document.getElementById('sidebarlogo');
-    
-        if (navbar.style.display === 'none') {
-          navbar.style.display = 'flex';
-          sidebarLogo.innerHTML = '✖';
-        } else {
-          navbar.style.display = 'none';
-          sidebarLogo.innerHTML = '☰'; 
-        }
-    }
-        </script>
+          
          </body>
        </html>
        <script src="/JS/producthandling.js"></script>

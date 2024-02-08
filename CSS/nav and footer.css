@@ -9,6 +9,10 @@ nav {
     padding-right: 25px;
     margin-bottom: 25px;
   }
+
+  nav span{
+    color: white;
+  }
   
   nav ul {
     display: flex;
