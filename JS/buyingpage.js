@@ -99,5 +99,6 @@ runOnStart();
     if (confirm("Are you sure you want to proceed with your purchase? Double check your cart before proceeding with the transaction")) {
         clearCart();
         putDataToHTML();
+        updateTotalPrice();
     } 
  }

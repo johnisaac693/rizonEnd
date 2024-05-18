@@ -14,7 +14,7 @@ let cartItem = getCartFromMemory() || [];
 //Updates cart data
 const updateCartInMemory = (cart) => {
     localStorage.setItem('cart', JSON.stringify(cart));
-    alert(`CART UPDATED!!! CART HAS ${getCartFromMemory().length} items`) ;
+   
     console.log(localStorage.getItem('cart'));
 };
 
@@ -77,6 +77,7 @@ const addToCart = (productId) => {
         });
     }
     updateCartInMemory(cart);
+    alert(`CART UPDATED!!! CART HAS ${getCartFromMemory().length} items`);
 };
 
 //Calls the Add products to html function on page load

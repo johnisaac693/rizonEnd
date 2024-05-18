@@ -11,6 +11,8 @@
            <title>Buying Page</title>
            <link rel="stylesheet" href="../CSS/buyingpage.css" />
            <link rel="stylesheet" href="/CSS/nav and footer.css">
+           <link rel="stylesheet" href="/CSS/Access.css">
+          <script type="text/javascript" src="/JS/Accessibilities.js"></script>
            <script src="https://kit.fontawesome.com/45028fbf29.js" crossorigin="anonymous"></script>
            
          </head>
@@ -18,7 +20,7 @@
           <nav>
 
             <div class="flexitem sitelogo"><img src="/Pics/Logo WebDev.PNG" alt="" /></div>
-            <div class="passionstatement"><span>Passion Statement</span></div>
+            <div class="passionstatement"><span>Timeless Treasures</span></div>
             <ul class="sidebar" id="sidebar">
               <li><a href="homepageniSean.html">HOME</a></li>
               <li><a href="Products.html">PRODUCTS</a></li>
@@ -56,8 +58,45 @@
            </div>
            <!-- End of Container -->
           
-             
-          
+           <!-- Accessability -->
+    <button class="access" onclick="accessability()" id="accessButton">
+      <img src="/Pics/pngwing.com.png">
+  </button>
+
+  <div class="accessabilityPanel" id="AP">
+      
+      <!-- Close Button -->
+      <button class="accessClose" onclick="closeButton()">
+          <img src="/Pics/pngwing.com.png">
+      </button>
+
+      <!-- Customizability -->
+      <div class="options">
+
+      <!-- Font Spacing -->
+      <button class="accordion" onclick="accordion(this.id)" id="idsp">Spacing</button>
+      <div class="btngrp" id="AFSpbtngrp">
+      <button class="stage" onclick="increaseLetterSpacing()">Increase Font Spacing</button>
+      <button class="stage" onclick="decreaseLetterSpacing()">Decrease Font Spacing</button>
+      </div>
+      
+      <!-- Font Size -->
+      <button class="accordion" onclick="accordion(this.id)" id="idfsi">Font Size</button>
+      <div class="btngrp" id="AFSibtngrp">
+      <button class="stage" onclick="increaseFontSize()">Increase Font Size</button>
+      <button class="stage" onclick="decreaseFontSize()">Decrease Font Size</button>
+      </div>
+
+      <!-- Font Style -->
+      <button class="accordion" onclick="accordion(this.id)" id="idd">Dyslexia</button>
+      <div class="btngrp" id="ADbtngrp">
+      <button class="stage" onclick="changeFontStyle1()">Verdana</button>
+      <button class="stage" onclick="changeFontStyle2()">Dyslexie</button>
+      <button class="stage" onclick="changeFontStyle3()">Helvetica</button>
+      </div>
+      
+      </div>
+  </div>
          </body>
        </html>
        <script src="/JS/producthandling.js"></script>
